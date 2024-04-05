@@ -1,0 +1,22 @@
+raw_train_ds: train_set.csv
+preprocessed_train_ds: preprocessed.pkl
+value_similarity_threshold: 0.95
+nan_value_threshold: 0.7
+vif_threshold: 60
+test_size: 0.25
+train_test_split_shuffle: True
+random_state: 42
+shuffle: True
+cv_folds: 3
+optuna_n_trials: 200
+optuna_timeout: 16000
+early_stopping_rounds: 15
+columns_to_drop: []
+collinear_fs_file: 'collinear_fs_vif_60.csv'
+unfrequent_cat_cols: {
+  id_col: '',
+  col_names: [],
+  thresholds: [],
+  grouped_val_name: ''
+}
+
